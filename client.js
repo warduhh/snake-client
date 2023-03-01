@@ -11,16 +11,13 @@ const connect = function() {
     console.log('Successfully connected to game server');
     conn.write('Name: WAR');
 
-
-
-   
-  setTimeout(() => {
+  /*setTimeout(() => {
     setInterval(() => {
      conn.write("Move: up")
       
     }, 50)
   }, 800) 
-  
+  */
 
   });
 
