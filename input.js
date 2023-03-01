@@ -11,15 +11,17 @@ const setupInput = (conn) => {
 
 const handleUserInput = function (key) {
 
+  connection.write("Say: Good Luck :)!");
+  connection.write("Say: You're still alive?");
+
+
   // ctrl-c (to terminate the game)
   if (key === '\u0003') {
-  
-    process.exit();
+  process.exit();
   }
 
   if (key === 'w') {
-   
-    connection.write('Move: up')
+  connection.write('Move: up')
   }
   if (key === 'a') {
     connection.write('Move: left')
@@ -30,10 +32,7 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write('Move: right')
   }
-
-
-
-
-
+ 
 };
+
 module.exports = { setupInput };
